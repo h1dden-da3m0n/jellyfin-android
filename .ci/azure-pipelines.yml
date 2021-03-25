@@ -1,6 +1,6 @@
 variables:
   ${{ if startsWith(variables['Build.SourceBranch'], 'refs/tags/v') }}:
-    JELLYFIN_VERSION: $[replace(variables['Build.SourceBranch'], 'refs/tags/', '')]
+    JELLYFIN_VERSION: $[replace(variables['Build.SourceBranch'], 'refs/tags/v', '')]
 
 trigger:
   batch: true
