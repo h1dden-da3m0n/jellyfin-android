@@ -31,7 +31,7 @@ jobs:
       - name: debug logging
         run: ls -lR build/jellyfin-publish/
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: build-artifacts
           retention-days: 14
