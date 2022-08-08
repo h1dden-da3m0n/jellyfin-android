@@ -48,7 +48,7 @@ jobs:
             "build/jellyfin-publish/version.txt"]
 
       - name: Upload to repo.jellyfin.org
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@5.2.1
         with:
           switches: -rltgoDzvO --delete --exclude='*' --include='**/*.apk' --include='*.txt'
           path: build/jellyfin-publish/
